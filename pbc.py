@@ -1,5 +1,5 @@
 # asking player about his name and giving him greetings
-name = input('What is your name : ')
+
 
 # basic stuff before we start the game
 
@@ -57,6 +57,7 @@ balance = []
 
 
 def work():
+    name = input('What is your name : ')
     print(f'Welcome {name} to our show')
     play = True
     while play:

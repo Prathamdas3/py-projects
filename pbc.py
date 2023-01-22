@@ -80,8 +80,7 @@ def work():
                     print(
                         f"Your answer is wrong and the right answer is {correct_answer[i]}")
                     balance.append(0)
-                    sum = sum+0
-                    print(f"Now your balance is {sum} rupees")
+
                 playnext = input("Do you want to play next (Y/N): ")
                 if playnext.capitalize() == 'Y':
                     pass

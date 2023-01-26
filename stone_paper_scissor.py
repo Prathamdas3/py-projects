@@ -7,7 +7,6 @@ def player_name():
     print(f'welcome {player} to the game of stone-paper-scissor ')
 
 
-player_name()
 # basic stuff before we start the game
 
 
@@ -19,7 +18,6 @@ def basic():
   ''')
 
 
-basic()
 # game element
 game_element = ['Stone', 'Paper', 'Scissor']
 
@@ -40,7 +38,6 @@ def player_choice():
             return game_element[int(choice)-1]
 
 
-player_choice()
 # computers choice
 
 
@@ -49,7 +46,6 @@ def computer_choice():
     return game_element[computer_choice]
 
 
-computer_choice()
 # play game
 
 
@@ -58,38 +54,23 @@ def play_game():
     return play
 
 
-play_game()
-# try game
-
-
-def try_next():
-    if play_game == 'Y':
-        pass
-    elif play_game == 'N':
-        play_again = False
-
-
-try_next()
 # game together
 
 
 def game_together():
-    play_again = True
+
     pg = play_game()
     if pg == 'Y':
-            player_name()
-            basic()
-            pc = player_choice()
-            cc = computer_choice()
-            if pc == cc:
-                print("The game is draw")
-                try_next()
-            elif ((pc == game_element[0]) and (cc == game_element[1])) or ((pc == game_element[1]) and (cc == game_element[2])) or ((pc == game_element[2]) and (cc == game_element[0])):
-                print("Better luck next time")
-                try_next()
-            elif ((pc == game_element[1]) and (cc == game_element[0])) or ((pc == game_element[2]) and (cc == game_element[1])) or ((pc == game_element[0]) and (cc == game_element[2])):
-                print("You have won the game..")
-                try_next()
+        player_name()
+        basic()
+        pc = player_choice()
+        cc = computer_choice()
+        if pc == cc:
+            print("The game is draw")
+        elif ((pc == game_element[0]) and (cc == game_element[1])) or ((pc == game_element[1]) and (cc == game_element[2])) or ((pc == game_element[2]) and (cc == game_element[0])):
+            print("Better luck next time")
+        elif ((pc == game_element[1]) and (cc == game_element[0])) or ((pc == game_element[2]) and (cc == game_element[1])) or ((pc == game_element[0]) and (cc == game_element[2])):
+            print("You have won the game..")
     elif pg == 'N':
         print("See you later")
 

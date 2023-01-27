@@ -4,7 +4,7 @@ import random
 
 def player_name():
     player = input('What is your name?')
-    print(f'welcome {player} to the game of stone-paper-scissor ')
+    print(f'welcome {player} to the game of rock-paper-scissor ')
 
 
 # basic stuff before we start the game
@@ -12,14 +12,14 @@ def player_name():
 
 def basic():
     print('''
-  1. Stone is stronger than scissor so stone wins 
-  2. Paper can warp a stone so paper is stronger than stone so paper wins
+  1. rock is stronger than scissor so rock wins 
+  2. Paper can warp a rock so paper is stronger than rock so paper wins
   3. Scissor can cut a paper so scissor is stronger than paper so scissor wins 
   ''')
 
 
 # game element
-game_element = ['Stone', 'Paper', 'Scissor']
+game_element = ['rock', 'Paper', 'Scissor']
 
 # player input
 

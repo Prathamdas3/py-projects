@@ -21,9 +21,6 @@ def basic():
 # Choosing the random number
 unknown_number = random.choice(range(0, 101))
 
-# counter of the live
-
-
 # Taking the input from the player
 
 

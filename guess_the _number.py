@@ -38,7 +38,7 @@ def player_choice():
         elif int(choice) in range(0, 101):
             choice_again = False
             return int(choice)
-# play-game
+# # play-game
 
 
 def play_game():
@@ -52,20 +52,20 @@ def game_together():
     if pg == 'Y':
         player_name()
         basic()
-        game = True
-        counter = 10
-        while game:
-            pc = player_choice()
-            counter = counter-1
-            print(counter)
-            if pc != unknown_number:
-                player_choice()
-                counter = counter-1
-                print(counter)
-                print('Choose another number')
+        for i in reversed(range(0, 11)):
 
-            else:
-                game = False
+            if i == 0:
+                print("You don't have anymore chance ")
+                break
+            if player_choice() != unknown_number:
+                print(
+                    f'Please select another number, you have only {i-1} chance left to guess the number ')
+            elif player_choice() == unknown_number:
+                print('You have won the game')
+                break
+
+        print(f'The unknown number was {unknown_number}')
+
     elif pg == 'N':
         print('See you later')
 
